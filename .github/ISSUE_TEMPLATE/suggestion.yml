@@ -8,6 +8,13 @@ body:
     attributes:
       value: |
         Thanks for your suggestion! Please check if something similar already exists before submitting.
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched for existing suggestions about this
+          required: true
   - type: textarea
     id: suggestion
     attributes:
@@ -30,10 +37,3 @@ body:
       label: Screenshots / Screen Recordings
       description: Drag and drop images or videos to support your suggestion.
       placeholder: "Paste screenshots or recordings here (optional)"
-  - type: checkboxes
-    id: checklist
-    attributes:
-      label: Checklist
-      options:
-        - label: I searched for existing suggestions about this
-          required: true

@@ -8,6 +8,15 @@ body:
     attributes:
       value: |
         Thanks for taking the time to report this bug! Please check if an issue about this already exists before submitting.
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched for existing issues about this problem
+          required: true
+        - label: I filled in all required fields
+          required: true
   - type: textarea
     id: description
     attributes:
@@ -33,12 +42,3 @@ body:
       label: Screenshots / Screen Recordings
       description: Drag and drop images or videos here to help us understand the problem.
       placeholder: "Paste screenshots or recordings here (optional)"
-  - type: checkboxes
-    id: checklist
-    attributes:
-      label: Checklist
-      options:
-        - label: I searched for existing issues about this problem
-          required: true
-        - label: I filled in all required fields
-          required: true
