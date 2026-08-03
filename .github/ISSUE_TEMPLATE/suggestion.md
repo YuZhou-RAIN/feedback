@@ -1,0 +1,39 @@
+---
+name: Suggestion
+description: Suggest an improvement to existing content or features
+title: "[Suggestion] "
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your suggestion! Please check if something similar already exists before submitting.
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggestion
+      description: What would you like to improve and how?
+      placeholder: "Describe your suggestion..."
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason
+      description: Why do you think this would be an improvement?
+      placeholder: "Because..."
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots / Screen Recordings
+      description: Drag and drop images or videos to support your suggestion.
+      placeholder: "Paste screenshots or recordings here (optional)"
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched for existing suggestions about this
+          required: true

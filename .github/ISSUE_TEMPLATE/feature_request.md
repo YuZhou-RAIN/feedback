@@ -1,0 +1,39 @@
+---
+name: Feature Request
+description: Suggest a new feature or content you'd like to see
+title: "[Feature] "
+labels: ["feature request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your idea! Please check if a similar request already exists before submitting.
+  - type: textarea
+    id: feature
+    attributes:
+      label: Feature Description
+      description: What would you like to see added?
+      placeholder: "Describe the feature..."
+    validations:
+      required: true
+  - type: textarea
+    id: usecase
+    attributes:
+      label: Use Case
+      description: When and how would you use this?
+      placeholder: "I would use this when..."
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: Reference
+      description: Any screenshots, links or examples that illustrate your idea.
+      placeholder: "Paste screenshots or links here (optional)"
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched for existing requests about this feature
+          required: true
